@@ -1,6 +1,6 @@
 function [E_out] = my_mex(P1, P2)
 
-    coder.cinclude('npt_pose.h');
+    coder.cinclude('include/npt_pose.h');
 
     %#codegen
     E_out = zeros(9,1); 
