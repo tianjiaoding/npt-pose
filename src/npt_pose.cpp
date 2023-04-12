@@ -156,8 +156,8 @@ void npt_pose(double* P1, double* P2, double* C, int n_obs,
 
 void npt_pose_my(double* P1, double* P2, double* C, int n_obs, double* E)
 {
-    is_normalize = true;
-    
+    bool is_normalize = true;
+
     // construct coefficient matrix of objective
     construct_coeff_objective(C, P1, P2, n_obs, is_normalize);
     
